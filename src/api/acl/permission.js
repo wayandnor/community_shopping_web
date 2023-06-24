@@ -22,11 +22,11 @@ export default {
   */
   removePermission(id) {
     return request({
-      url: `${api_name}/remove/${id}`,
+      url: `${api_name}/${id}`,
       method: "delete"
     })
   },
-  
+    
   /* 
   保存一个权限项
   */
