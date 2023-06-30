@@ -6,7 +6,7 @@ export default {
 
   findRegionByKeyword(keyword) {
     return request({
-      url: `${api_name}/findRegionByKeyword/${keyword}`,
+      url: `${api_name}/byKeyword/${keyword}`,
       method: 'get'
     })
   },

@@ -32,7 +32,7 @@ export default {
   */
   addPermission(permission) {
     return request({
-      url: `${api_name}/save`,
+      url: `${api_name}`,
       method: "post",
       data: permission
     })
@@ -43,7 +43,7 @@ export default {
   */
   updatePermission(permission) {
     return request({
-      url: `${api_name}/update`,
+      url: `${api_name}`,
       method: "put",
       data: permission
     })

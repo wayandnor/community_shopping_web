@@ -61,7 +61,7 @@
       */
       getCheckedIds (auths, initArr = []) {
         return auths.reduce((pre, item) => {
-          if (item.select && item.level===4) {
+          if (item.select) {
             pre.push(item.id)
           } else if (item.children) {
             this.getCheckedIds(item.children, initArr)

@@ -14,16 +14,16 @@ export default {
 
   getById(id) {
     return request({
-      url: `${api_name}/get/${id}`,
+      url: `${api_name}/${id}`,
       method: 'get'
     })
   },
 
-  save(role) {
+  save(ware) {
     return request({
       url: `${api_name}/save`,
       method: 'post',
-      data: role
+      data: ware
     })
   },
 
@@ -50,7 +50,7 @@ export default {
 
   findAllList() {
     return request({
-      url: `${api_name}/findAllList`,
+      url: `${api_name}/listAll`,
       method: 'get'
     })
   }

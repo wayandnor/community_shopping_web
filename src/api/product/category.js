@@ -13,29 +13,29 @@ export default {
   },
   getById(id) {
     return request({
-      url: `${api_name}/get/${id}`,
+      url: `${api_name}/${id}`,
       method: 'get'
     })
   },
 
-  save(role) {
+  save(category) {
     return request({
-      url: `${api_name}/save`,
+      url: `${api_name}`,
       method: 'post',
-      data: role
+      data: category
     })
   },
 
-  updateById(role) {
+  updateById(category) {
     return request({
-      url: `${api_name}/update`,
+      url: `${api_name}`,
       method: 'put',
-      data: role
+      data: category
     })
   },
   removeById(id) {
     return request({
-      url: `${api_name}/remove/${id}`,
+      url: `${api_name}/${id}`,
       method: 'delete'
     })
   },
@@ -49,7 +49,7 @@ export default {
 
   findAllList() {
     return request({
-      url: `${api_name}/findAllList`,
+      url: `${api_name}/all`,
       method: 'get'
     })
   }
