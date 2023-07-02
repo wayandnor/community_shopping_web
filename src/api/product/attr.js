@@ -6,35 +6,35 @@ export default {
 
   getList(groupId) {
     return request({
-      url: `${api_name}/${groupId}`,
+      url: `${api_name}/list/${groupId}`,
       method: 'get'
     })
   },
   getById(id) {
     return request({
-      url: `${api_name}/get/${id}`,
+      url: `${api_name}/${id}`,
       method: 'get'
     })
   },
 
-  save(role) {
+  save(attr) {
     return request({
-      url: `${api_name}/save`,
+      url: `${api_name}`,
       method: 'post',
-      data: role
+      data: attr
     })
   },
 
-  updateById(role) {
+  updateById(attr) {
     return request({
-      url: `${api_name}/update`,
+      url: `${api_name}`,
       method: 'put',
-      data: role
+      data: attr
     })
   },
   removeById(id) {
     return request({
-      url: `${api_name}/remove/${id}`,
+      url: `${api_name}/${id}`,
       method: 'delete'
     })
   },
