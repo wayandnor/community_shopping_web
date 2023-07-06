@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 
-const api_name = '/admin/product/skuInfo'
+const api_name = '/admin/product/sku-info'
 
 export default {
 
@@ -18,11 +18,11 @@ export default {
     })
   },
 
-  save(role) {
+  save(skuInfo) {
     return request({
       url: `${api_name}`,
       method: 'post',
-      data: role
+      data: skuInfo
     })
   },
 
