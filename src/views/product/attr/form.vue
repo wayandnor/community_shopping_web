@@ -100,7 +100,6 @@ export default {
     // 根据id更新记录
     updateData() {
       api.updateById(this.attr).then(response => {
-        debugger
         if (response.code) {
           this.$message({
             type: 'success',
