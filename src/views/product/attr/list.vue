@@ -92,7 +92,6 @@ export default {
 
       api.getList(this.attrGroupId).then(
         response => {
-          debugger
           this.list = response.data
           // 数据加载并绑定成功
           this.listLoading = false

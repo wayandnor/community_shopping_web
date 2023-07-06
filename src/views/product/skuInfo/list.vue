@@ -187,7 +187,6 @@ export default {
 
       api.getPageList(this.page, this.limit, this.searchObj).then(
         response => {
-          debugger
           this.list = response.data.records
           this.total = response.data.total
 
@@ -286,7 +285,6 @@ export default {
     },
 
     handlePublishStatusChange(index, row) {
-      debugger
       if(row.checkStatus !== 1) {
         this.$message({
           type: 'info',
@@ -305,7 +303,6 @@ export default {
     },
 
     handleStatusChange(index, row) {
-      debugger
       api.check(row.id, row.checkStatus).then(response => {
         this.$message({
           type: 'info',
@@ -316,7 +313,6 @@ export default {
     },
 
     handleNewPersonChange(index, row) {
-      debugger
       api.isNewPerson(row.id, row.isNewPerson).then(response => {
         this.$message({
           type: 'info',

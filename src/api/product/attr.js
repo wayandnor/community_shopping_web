@@ -6,20 +6,20 @@ export default {
 
   getList(groupId) {
     return request({
-      url: `${api_name}/${groupId}`,
+      url: `${api_name}/list/${groupId}`,
       method: 'get'
     })
   },
   getById(id) {
     return request({
-      url: `${api_name}/get/${id}`,
+      url: `${api_name}/${id}`,
       method: 'get'
     })
   },
 
   save(role) {
     return request({
-      url: `${api_name}/save`,
+      url: `${api_name}`,
       method: 'post',
       data: role
     })
@@ -34,7 +34,7 @@ export default {
   },
   removeById(id) {
     return request({
-      url: `${api_name}/remove/${id}`,
+      url: `${api_name}/${id}`,
       method: 'delete'
     })
   },

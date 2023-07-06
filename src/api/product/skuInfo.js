@@ -13,14 +13,14 @@ export default {
   },
   getById(id) {
     return request({
-      url: `${api_name}/get/${id}`,
-      method: 'get'
+      url: `${api_name}/${id}`,
+      method: 'get'/api/product
     })
   },
 
   save(role) {
     return request({
-      url: `${api_name}/save`,
+      url: `${api_name}`,
       method: 'post',
       data: role
     })
@@ -35,7 +35,7 @@ export default {
   },
   removeById(id) {
     return request({
-      url: `${api_name}/remove/${id}`,
+      url: `${api_name}/${id}`,
       method: 'delete'
     })
   },
@@ -51,7 +51,7 @@ export default {
   publish(id, status) {
     return request({
       url: `${api_name}/publish/${id}/${status}`,
-      method: 'get'
+      method: 'put'
     })
   },
 
@@ -59,7 +59,7 @@ export default {
   check(id, status) {
     return request({
       url: `${api_name}/check/${id}/${status}`,
-      method: 'get'
+      method: 'put'
     })
   },
 
@@ -67,7 +67,7 @@ export default {
   isNewPerson(id, status) {
     return request({
       url: `${api_name}/isNewPerson/${id}/${status}`,
-      method: 'get'
+      method: 'put'
     })
   },
 }
