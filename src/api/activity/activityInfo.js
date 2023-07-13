@@ -12,29 +12,29 @@ export default {
   },
   getById(id) {
     return request({
-      url: `${api_name}/get/${id}`,
+      url: `${api_name}/${id}`,
       method: 'get'
     })
   },
 
-  save(role) {
+  save(activityInfo) {
     return request({
-      url: `${api_name}/save`,
+      url: `${api_name}`,
       method: 'post',
-      data: role
+      data: activityInfo
     })
   },
 
   updateById(role) {
     return request({
-      url: `${api_name}/update`,
+      url: `${api_name}`,
       method: 'put',
       data: role
     })
   },
   removeById(id) {
     return request({
-      url: `${api_name}/remove/${id}`,
+      url: `${api_name}/${id}`,
       method: 'delete'
     })
   },
