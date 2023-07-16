@@ -252,7 +252,6 @@ export default {
         activitySkuList: skuList,
         couponIdList: couponIdList
       }
-      debugger
       api.saveActivityRule(ruleData).then(response => {
         this.$message.success(response.message)
         this.$router.push({ path: '/activity/activityInfo/list' })

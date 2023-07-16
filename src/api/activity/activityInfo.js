@@ -48,13 +48,13 @@ export default {
 
   findActivityRuleList(id) {
     return request({
-      url: `${api_name}/findActivityRuleList/${id}`,
+      url: `${api_name}/rules/${id}`,
       method: 'get'
     })
   },
   saveActivityRule(rule) {
     return request({
-      url: `${api_name}/saveActivityRule`,
+      url: `${api_name}/rules`,
       method: 'post',
       data: rule
     })
